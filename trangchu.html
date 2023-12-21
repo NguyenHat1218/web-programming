@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js" defer></script>
+    <link rel="stylesheet" href="./css/base.css">
+    <script src="./js/app.js" defer></script>
+    <link rel="stylesheet" href="./css/trangchu.css">
+    <link rel="stylesheet" href="./css/sanpham.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="./css/sanpham.css">
+    <script src="./js/sanpham.js" defer></script>
+    <title>Trang chủ</title>
+    <!--bootstrap  -->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.css">
+    <script src="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.19.1/dist/extensions/mobile/bootstrap-table-mobile.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"
+        integrity="sha512-OvBgP9A2JBgiRad/mM36mkzXSXaJE9BEIENnVEmeZdITvwT09xnxLtT4twkCa8m/loMbPHsvPl0T8lRGVBwjlQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"> </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css"
+        integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+  
+    h5,
+    p{
+        color: rgb(76, 157, 177);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: bold; 
+        text-align: center;
+    }
+    button:hover{
+        background-color:rgb(76, 157, 177);
+    }
+    
+</style>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img class="logo" src="images/logo2.jpg" width="150" height="90px">
+            </div>
+            <div class="header_nav">
+                <a href="./trangchu.html" class="header_button">Trang chủ</a>
+                <a href="./gioithieu.html" class="header_button">Giới thiệu</a>
+                <a href="./sanpham.html" class="header_button">Sản phẩm</a>
+                <a href="./tintuc.html" class="header_button">Tin tức</a>
+                <a href="./dangnhap.html" class="header_button">Đăng nhập</a>
+                <a href="./dangky.html" class="header_button">Đăng ký</a>
+                <a href="./lienhe.html" class="header_button">Liên hệ</a>
+                <div class="search_wrapper">
+                    <input placeholder="Nhập nội dung cần tìm" type="text">
+                    <div class="search_button">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="search_button">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="sp_1"></div>
+            <div class="sp_2"></div>
+            <div class="sp_3"></span>
+            </div>
+        </div>
+        <marquee class="tbh">Chào mừng bạn đã đến với tiệm bách hóa ITFive.</marquee>
+        <main class="container" style="margin-bottom: 20px;">
+            <p>Thực phẩm được yêu thích nhất 2021</p>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
+
+                        <div class="carousel-inner rounded border border-light">
+                            <div class="carousel-item active">
+                                <img src="images/sanpham/pepsi.jpg" width="500px" height="500px" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Nước uống Pepsi vị chanh không calo</h5>
+                                    <p>24 lon nước ngọt Pepsi Cola 330ml.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/sanpham/gạo nàng hương.jpg" width="500px" height="500px" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Lotus rice</h5>
+                                    <p> Gạo Lotus Rice túi 4kg</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/sanpham/nước suối.jpg" width="500px" height="500px" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Nước suối - Water</h5>
+                                    <p>Nước khoáng thiên nhiên La Vie 700ml</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden"></span>
+                        </button>
+                    </div>
+                    <div>
+
+                    </div>
+
+                </div>
+                <hr>
+                <br>
+                <h1 class="page_title">
+                    SẢN PHẨM MỚI NHẤT 2021
+                </h1>
+                <div class="products_list">
+
+                    <div class="product">
+                        <div class="product_wrapper">
+                            <img src="./images/sanpham/trà xanh không độ.jpg" width="280px" alt="trà xanh không độ">
+                            <h2 class="product_title">
+                                Trà xanh không độ
+                            </h2>
+                            <p class="product_description">
+                                1 lốc 6 chai trà xanh Không Độ hương vị chanh dây 455ml<br>
+                                <a href="details.html">Xem chi tiết</a>
+                            </p>
+                            <div class="product_nav">
+                                Số lượng
+                                <input type="number" />
+                                <button>
+                                    Đặt hàng
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="product">
+                        <div class="product_wrapper">
+                            <img src="./images/sanpham/7up.jpg" width="300px" alt="7Up">
+                            <h2 class="product_title">
+                                Nước uống 7Up
+                            </h2>
+                            <p class="product_description">
+                                Nước giải khát 7 Up Mojito hương chanh bạc hà 330ml
+                                <a href="details.html">Xem chi tiết</a>
+                            </p>
+                            <div class="product_nav">
+                                Số lượng
+                                <input type="number" />
+                                <button>
+                                    Đặt hàng
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="product">
+                        <div class="product_wrapper">
+                            <img src="./images/sanpham/c2.jpg" alt="c2">
+                            <h2 class=" product_title">
+                                Nước uống C2
+                            </h2>
+                            <p class="product_description">
+                                6 chai trà xanh C2 hương chanh 230ml
+                                <a href="details.html">Xem chi tiết</a>
+                            </p>
+                            <div class="product_nav">
+                                Số lượng
+                                <input type="number" />
+                                <button>
+                                    Đặt hàng
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="product">
+                        <div class="product_wrapper">
+                            <img src="./images/sanpham/coca.jpg" alt="coca">
+                            <h2 class=" product_title">
+                                Nước uống coca cola
+                            </h2>
+                            <p class="product_description">
+                                6 chai nước ngọt Coca Cola 600ml
+                                <a href="#">Xem chi tiết</a>
+                            </p>
+                            <div class="product_nav">
+                                Số lượng
+                                <input type="number" />
+                                <button>
+                                    Đặt hàng
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product_wrapper">
+                            <img src="./images/sanpham/fanta.jpg" alt="fanta">
+                            <h2 class=" product_title">
+                                Nước uống Fanta
+                            </h2>
+                            <p class="product_description">
+                                6 chai nước ngọt Fanta hương cam 390ml
+                                <a href="#">Xem chi tiết</a>
+                            </p>
+                            <div class="product_nav">
+                                Số lượng
+                                <input type="number" />
+                                <button>
+                                    Đặt hàng
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="product">
+                        <div class="product_wrapper">
+                            <img src="./images/sanpham/pepsi.jpg" width="300px" alt="pepsi">
+                            <h2 class=" product_title">
+                                Nước uống Pepsi
+                            </h2>
+                            <p class="product_description">
+                                24 lon nước ngọt Pepsi Cola 330ml
+                                <a href="#">Xem chi tiết</a>
+                            </p>
+                            <div class="product_nav">
+                                Số lượng
+                                <input type="number" />
+                                <button>
+                                    Đặt hàng
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product_wrapper">
+                            <img src="./images/sanpham/sprite.jpg" width="300px" alt="sprite">
+                            <h2 class=" product_title">
+                                Nước uống Sprite
+                            </h2>
+                            <p class="product_description">
+                                Thùng 24 chai nước ngọt Sprite hương chanh 390ml
+                                <a href="#">Xem chi tiết</a>
+                            </p>
+                            <div class="product_nav">
+                                Số lượng
+                                <input type="number" />
+                                <button>
+                                    Đặt hàng
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product_wrapper">
+                            <img src="./images/sanpham/sting.jpg" width="300px" alt="sting">
+                            <h2 class=" product_title">
+                                Nước uống sting
+                            </h2>
+                            <p class="product_description">
+                                Nước tăng lực Sting Sleek hương dâu 320ml
+                                <a href="#">Xem chi tiết</a>
+                            </p>
+                            <div class="product_nav">
+                                Số lượng
+                                <input type="number" />
+                                <button>
+                                    Đặt hàng
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product_wrapper">
+                            <img src="./images/sanpham/nước suối.jpg" alt="nước suối">
+                            <h2 class=" product_title">
+                                Nước suối
+                            </h2>
+                            <p class="product_description">
+                                Nước khoáng thiên nhiên La Vie 700ml
+                                <a href="#">Xem chi tiết</a>
+                            </p>
+                            <div class="product_nav">
+                                Số lượng
+                                <input type="number" />
+                                <button>
+                                    Đặt hàng
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </main>
+
+        <footer>
+            &copy;2021 Bản quyền thuộc về ITFive.
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-pinterest"></i>
+            <a href="#" class="to_top"></a>
+        </footer>
+    </div>
+</body>
+
+</html>

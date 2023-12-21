@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js" defer></script>
+    <link rel="stylesheet" href="./css/base.css">
+    <script src="./js/app.js" defer></script>
+    <link rel="stylesheet" href="./css/dangnhap.css">
+    <link rel="stylesheet" href="css/dangky-dangnhap.css">
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js">
+    <script src="js/dangky-dangnhap.js"></script>
+    <title>Đăng ký</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+            <div class="logo">
+                <img class="logo" src="images/logo2.jpg" width="150" height="90px">
+            </div>
+            <div class="header_nav">
+                <a href="./trangchu.html" class="header_button">Trang chủ</a>
+                <a href="./gioithieu.html" class="header_button">Giới thiệu</a>
+                <a href="./sanpham.html" class="header_button">Sản phẩm</a>
+                <a href="./tintuc.html" class="header_button">Tin tức</a>
+                <a href="./dangnhap.html" class="header_button">Đăng nhập</a>
+                <a href="./dangky.html" class="header_button">Đăng ký</a>
+                <a href="./lienhe.html" class="header_button">Liên hệ</a>
+
+                <div class="search_wrapper">
+                    <input placeholder="Nhập nội dung cần tìm" type="text">
+                    <div class="search_button">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="search_button">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="sp_1"></div>
+            <div class="sp_2"></div>
+            <div class="sp_3"></span>
+            </div>
+        </div>
+
+       
+        <main>
+            <div id="dang-ky">
+                <div id="error" class="open">
+            
+                </div>
+                <form action="" id="form-dang-ky" name="dangky" class="was-validated">
+                    
+                    <div class="form-header">
+                        Tạo tài khoản
+                    </div>
+                    <div id="">
+                       <p class="tai-khoan-boder" >---------- Nhập thông tin tài khoản ----------</p>
+                      
+                    </div>
+                    <div>
+                        <div>
+<label class="login-label" for="" ><i class="fas fa-file-signature icon-login"></i><b>Họ và tên:</b><span class="sao">*</span></label>
+                            <input type="text" class="form-control form-control-sm" id="name" placeholder="Hãy nhập họ tên" name="name" required pattern=".{4,}">
+                            <div class="valid-feedback">Họ và tên hợp lệ.</div>
+                            <div class="invalid-feedback">Họ và tên ít nhất 4 ký tự.</div>
+                        </div>
+                        <label class="login-label" for=""> <i class="fas fa-venus-mars icon-login"></i><b>Giới tính:</b></label>
+                        <input type="radio"  id="gt1" value="1" name="gt" checked><p class="gt"> Nam</p>
+                        <input type="radio"  id="gt2" value="2" name="gt"> <p class="gt"> Nữ</p>
+                        <input type="radio"  id="gt3" value="3" name="gt"><p class="gt"> Khác</p>
+                        <div>
+                            <label class="login-label" for=""><i class="fas fa-user icon-login" ></i><b>Tên tài khoản:</b><span class="sao">*</span></label>
+                            <input type="text" class="form-control form-control-sm" id="uname" placeholder="Hãy nhập tên tài khoản" name="uname" required pattern=".{5,}">
+                            <div class="valid-feedback">Tên tài khoản hợp lệ.</div>
+                            <div class="invalid-feedback">Tên tài khoản ít nhất 5 ký tự.</div>
+                        </div>
+                        <div>
+                            <label class="login-label" for=""><i class="fas fa-lock icon-login" ></i><b>Mật khẩu:</b><span class="sao">*</span></label>
+                            <input type="password" class="form-control form-control-sm" id="pwd1" placeholder="Hãy nhập mật khẩu" name="pwd1" required pattern=".{8,10}">
+                            <div class="valid-feedback">Mật khẩu hợp lệ.</div>
+                            <div class="invalid-feedback">Mật khẩu 8-10 ký tự.</div>
+                        </div>
+                        <div>
+                            <label class="login-label" for=""><i class="fas fa-lock icon-login" ></i><b>Nhập lại mật khẩu:</b><span class="sao">*</span></label>
+                            <input type="password" class="form-control form-control-sm" id="pwd2" placeholder="Hãy nhập lại mật khẩu" name="pwd2" required pattern=".{8,10}">
+                            <div class="valid-feedback">Bạn đã nhập lại mật khẩu.</div>
+                            <div class="invalid-feedback">Hãy nhập lại đúng mật khẩu.</div>
+                        </div>
+                        <button onclick="return showError()" type="submit" class="login-button mt-top-16" id="btn">TẠO TÀI KHOẢN<i class="fas fa-check icon-login" ></i></button>
+<div id="dn"><a href="dangnhap.html"> Đăng nhập</a></div>
+                       
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer>
+            &copy; 2021 Bản quyền thuộc về ITFive.
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-pinterest"></i>
+            <a href="#" class="to_top"></a>
+        </footer>
+    </div>
+</body>
+<script>
+    function showError() {
+        var pwd1 = document.getElementById('pwd1');
+        var pwd2 = document.getElementById('pwd2');
+        var name = document.getElementById('name');
+        var uname = document.getElementById('uname');
+        if(name.value.length < 4 ){
+            error({
+            title: "Lỗi!",
+            message: "Họ tên cần ít nhất 4 ký tự",
+           
+            duration: 5000 });
+        }
+        if(uname.value.length == 0 && name.value.length >= 4){
+            error({
+            title: "Lỗi!",
+            message: "Bạn chưa nhập tài khoản",
+           
+            duration: 5000 });
+        }
+        if(uname.value.length < 5 && uname.value != ''){
+            error({
+            title: "Lỗi!",
+            message: "Tên tài khoản cần ít nhất 5 ký tự",
+           
+            duration: 5000 });
+        }
+        if(pwd1.value.length == 0 && name.value.length >= 4 && uname.value.length >= 5 ){
+            error({
+            title: "Lỗi!",
+            message: "Bạn chưa nhập mật khẩu",
+           
+            duration: 5000 });
+        }
+        if(pwd1.value.length < 8 && pwd1.value != ''){
+            error({
+            title: "Lỗi!",
+            message: "Mật khẩu tài khoản cần ít nhất 8 ký tự",
+           
+            duration: 5000 });
+        
+        }
+        if(pwd2.value.length == 0 && name.value.length >= 4 && uname.value.length >= 5 && pwd1.value.length >=8 ){
+            error({
+            title: "Lỗi!",
+            message: "Bạn chưa nhập lại mật khẩu",
+            
+            duration: 5000
+         });
+        }
+        if(pwd2.value !== pwd1.value && pwd2.value.length > 0){
+            
+            error({
+            title: "Lỗi!",
+            message: "Mật khẩu không trùng khớp",
+            
+            duration: 5000
+         });
+         pwd2.focus();
+         return false;
+        
+        
+        }
+         
+        else if(pwd2.value == pwd1.value && pwd1.value.length > 0 && pwd2.value.length > 0)    {
+            alert('Đăng ký thành công');
+            return true;
+        }
+         
+  }
+
+  
+</script>
+</html>

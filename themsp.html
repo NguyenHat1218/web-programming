@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js" defer></script>
+    <link rel="stylesheet" href="./css/base.css">
+    <script src="./js/app.js" defer></script>
+    <title>Admin</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+            <div class="logo">
+                <img class="logo" src="images/logo2.jpg" width="150" height="90px">
+            </div>
+            <div class="header_nav">
+                <a href="./trangchu.html" class="header_button">Trang chủ</a>
+                <a href="./gioithieu.html" class="header_button">Giới thiệu</a>
+                <a href="./sanpham.html" class="header_button">Sản phẩm</a>
+                <a href="./tintuc.html" class="header_button">Tin tức</a>
+                <a href="./dangnhap.html" class="header_button">Đăng nhập</a>
+                <a href="./dangky.html" class="header_button">Đăng ký</a>
+                <a href="./lienhe.html" class="header_button">Liên hệ</a>
+
+                <div class="search_wrapper">
+                    <input placeholder="Nhập nội dung cần tìm" type="text">
+                    <div class="search_button">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="search_button">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="sp_1"></div>
+            <div class="sp_2"></div>
+            <div class="sp_3"></span>
+            </div>
+        </div>
+    
+        <h1 class="page_title">
+            THÊM SẢN PHẨM MỚI
+        </h1>
+        <br>
+        <div class="frm">
+            <table id="t1">
+                <tr>
+                    <th>Mã Sản Phẩm:</th>
+                    <td><input required maxlength="5" type="text" id="stt" name="stt"
+                        placeholder="là số dương khác 0"></td>
+                </tr>
+                <tr>
+                    <th>Tên Sản Phẩm:</th>
+                    <td><input required type="text" id="thh" name="thh"
+                        placeholder="không rỗng"></td>
+                </tr>
+                <tr>
+                    <th>Loại Sản Phẩm:</th>
+                    <td >
+                        <select id="loaisp" name="loaisp" required>
+                            <option value="">--chọn--</option>
+                            <option value="Trái cây">Trái cây</option>
+                            <option value="Nước uống">Nước uống</option>
+<option value="Rau, củ, quả">Rau, củ, quả</option>
+                            <option value="Thịt">Thịt</option>
+                            <option value="Sản phẩm khác">Sản phẩm khác</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Số Lượng:</th>
+                    <td><input required pattern="{\d}" min="1" type="number" id="sl" name="sl"
+                        placeholder="là số dương"></td>
+                </tr>
+                <tr>
+                    <th>Đơn Giá:</th>
+                    <td><input  required pattern="\d" min="1" type="number" id="gia" name="gia"
+                        placeholder="Vd: 30.000"></td>
+                </tr>
+                <tr>
+                    <th>Hình Ảnh:</th>
+                    <td><input  required type="file" id="ha" name="ha"></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>
+                        <button onclick="Refresh()">Refresh</button>
+                        <button onclick="addimg()">Add</button>
+                    </td>
+                </tr>
+            </table>   
+        </div>
+
+        <div id="database" style="margin-top: 20px;">
+        
+        </div>
+      
+        <script>
+            var data = []; // Khai báo mảng trong javascript
+      
+            // Check trùng id
+            function checkID(stt){
+                var list = this.data;
+                for (var i = 0; i < list.length; i++){
+                    if (list[i].stt == stt) {
+                        return true;
+                    }
+                }
+            }
+      
+            // Check chưa nhập thông tin
+            function checkInfo(){
+                var stt = document.getElementById('stt').value;
+                var thh = document.getElementById('thh').value;
+                var loaisp = document.getElementById('loaisp').value;
+                var sl = document.getElementById('sl').value;
+                var gia = document.getElementById('gia').value;
+                var ha = document.getElementById('ha').value;
+                if (stt && thh && sl && gia) {
+                    return true;
+                }else{
+                    alert('Vui lòng nhập đầy đủ thông tin trước khi thêm!');
+                }
+            }
+      
+            // Thêm mới sản phẩm
+            function addimg(){
+                var stt = document.getElementById('stt').value;
+                var thh = document.getElementById('thh').value;
+                var loaisp = document.getElementById('loaisp').value;
+                var sl = document.getElementById('sl').value;
+                var gia = document.getElementById('gia').value;
+                var ha = document.getElementById('ha').value;
+                var item = {
+                    stt    :  stt,
+                    thh    :  thh,
+loaisp :  loaisp,
+                    sl     :  sl,
+                    gia    :  gia,
+                    ha     :  ha
+                };
+      
+                if (checkID(stt)) {
+                    alert("MÃ SẢN PHẨM đã tồn tại, vui lòng nhập Mã SẢM PHẨM khác!");
+                }else if(checkInfo()){
+                    this.data.push(item);
+                    console.log(data);
+                    View();
+                }               
+            }
+      
+            // Hiển thị sản phẩm
+            function View(){
+                var list = this.data;
+      
+                // Xử lý cộng chuỗi thành html - table
+                var datas = '<table border="1" solid="#F8F8FF" cellpadding="6"><tr><td>MÃ SẢN PHẨM</td><td>TÊN HÀNG HÓA</td><td>LOẠI SẢN PHẨM</td><td>SỐ LƯỢNG</td><td>GIÁ SẢN PHẨM</td><td>HÌNH ẢNH</td><td>Action</td></tr>';
+                for (var i = 0; i < list.length; i++){
+                    
+                    datas += "<tr>";
+                    datas += "<td>" + list[i].stt + "</td>"; 
+                    datas += "<td>" + list[i].thh + "</td>"; 
+                    datas += "<td>" + list[i].loaisp + "</td>"; 
+                    datas += "<td>" + list[i].sl + "</td>"; 
+                    datas += "<td>" + list[i].gia + "</td>";
+                    datas += "<td> <img width='100' src = images/sanpham/sting.jpg> </td>"; 
+                    datas += "<td><button onclick='Deletes(" + list[i].stt + ")'>Xóa</button>";
+                    datas += "</tr>";
+                }
+                datas += '</table>';
+      
+                if (list.length != 0) {
+                    document.getElementById('database').innerHTML = datas;
+                }else{
+                     document.getElementById('database').innerHTML = 'Dữ liệu trống!';
+                }
+               
+            }
+      
+            // Xóa sản phẩm theo id
+            function Deletes(stt){
+                var list = this.data;
+                var check = confirm("Bạn có muốn xóa hàng hóa này không?");
+      
+                if(check){
+                    for (var i = 0; i < list.length; i++){
+                        if (list[i].stt == stt) {
+                            list.splice(i, 1);
+                        }
+                    }
+                }
+                View(); // gọi hàm hiển thị
+            }
+      
+            // Refresh
+            function Refresh(){
+                document.getElementById('stt').value = '';
+                document.getElementById('thh').value = '';
+                document.getElementById('sl').value = '';
+                document.getElementById('gia').value = '';
+                document.getElementById('loaisp').value = '';
+                document.getElementById('ha').value = '';
+            }
+
+            
+
+            
+        </script>
+
+    </div>
+        <footer>
+            &copy; 2021 Bản quyền thuộc về ITFive.
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-pinterest"></i>
+            <a href="#" class="to_top"></a>
+        </footer>
+    
+</body>
+
+</html>

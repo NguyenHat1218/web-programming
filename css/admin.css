@@ -1,0 +1,24 @@
+#t1{
+    width: 400px;
+    border-spacing: 10px;
+    text-align: left;
+}
+.list{
+    background-color: silver;
+    margin: auto;
+    border: 3px solid steelblue;
+    border-collapse: collapse;
+    text-align: left;
+}
+.frm{
+    background-color: silver;
+    margin: auto;
+    border: 3px solid cornflowerblue;
+    width: 500px;
+    
+}
+.title{
+    background-color: cornflowerblue;
+    text-align: center;
+    color: white;
+}

@@ -1,0 +1,38 @@
+.left-table {
+    position: relative;
+    width: 30%;
+    bottom: 126px;
+}
+
+.right-table {
+    position: relative;
+    width: 1%;
+}
+
+.text-p {
+    text-align: justify;
+    padding: 0 5px 0 0;
+}
+
+.text-h1 {
+    color: #ed4190;
+}
+
+.text-h1:hover {
+    color: #b92168;
+}
+
+.border {
+    border: 1px solid #F8F8FF;
+    background: #F8F8FF;      
+}
+
+.padding-text {
+    padding-bottom: 16px;
+    padding-left: 10px;
+}
+
+.padding-text2 {
+    padding-left: 10px;
+    padding-top: 10px;
+}

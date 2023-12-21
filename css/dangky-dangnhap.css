@@ -1,0 +1,167 @@
+body{
+    margin: 0;
+}
+.mt-top-16{
+    margin-top: 16px;
+}
+#dang-ky, #dang-nhap{
+    display: flex;
+    justify-content: center;
+    
+}
+.form-header{
+    font-size: 20px;
+    background-color: #0d6efda3;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    font-weight: 700;
+}
+.login-label {
+    display: block;
+    font-size: 13px;
+    margin-top: 16px;
+    margin-bottom: 4px;
+}
+.login-input{
+    display: block;
+    width: 376px;
+    font-size: 10px;
+    padding: 10px;
+}
+.login-button{
+    display: block;
+    width: 100%;
+    height: 35px;
+    background-color: #0d6efda3;
+    border: none;
+    color: #fff;
+    opacity: 1;
+}
+.login-button:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+#form-dang-nhap,#form-dang-ky {
+    height: auto;
+    width: 700px;
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
+.form-login p{
+    float: right;
+    font-size: 11px;
+}
+.form-login p:hover{
+    cursor: pointer;
+}
+.icon-login{
+    padding: 4px;
+}
+.tai-khoan-boder{
+    text-align: center;
+}
+.gt{
+    font-size: 13px;
+    display: inline;
+}
+#dn {
+    margin-left: 596px;
+    border: 2px solid #0d6efda3;
+    background-color: #fff;
+    margin-top: 16px;
+    padding: 4px;
+    margin-right: 4px;
+    display: block;
+    width: 100px;
+    opacity: 1;
+
+}
+#dn a{
+    text-decoration: none;
+    color: black;
+}
+#dn:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.sao{
+    color: red;
+}
+.tai-khoan-boder{
+    font-weight: 500;
+    color: rgb(145, 144, 144);
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: -8px;
+}
+#error{
+    position: fixed;
+  top: 110px;
+  right: 32px;
+  z-index: 999999;
+  
+}
+.error{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 20px 0;
+    border-left: 4px solid;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
+    transition: all linear 0.3s;
+    border-color: #ff623d;
+    color: #ff623d;
+}
+@keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(calc(100% + 32px));
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes fadeOut {
+    to {
+      opacity: 0;
+    }
+  }
+  .icon-error{
+    font-size: 24px;
+  }
+.icon-close{
+    font-size: 20px;
+  color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.icon-close,
+.icon-error {
+  padding: 0 16px;
+}
+.icon-close:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.error-body{
+    flex-grow: 1;
+}
+.error-title{
+    font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+.error + .error{
+    margin-top: 24px;
+}
+.msg{
+    font-size: 14px;
+  color: #888;
+  margin-top: 6px;
+  line-height: 1.5;
+}

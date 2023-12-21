@@ -1,0 +1,41 @@
+.search_result {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search_product {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid rgb(154, 206, 238);
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.img{
+    width: 220px;
+    margin-top: 5px;
+    height: 220px;
+}
+.product_nav {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.product_nav * {
+    margin: 5px 5px;
+}
+
+.product_nav button {
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.product_nav input {
+    width: 60px;
+}

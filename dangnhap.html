@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js" defer></script>
+    <link rel="stylesheet" href="./css/base.css">
+    <script src="./js/app.js" defer></script>
+    <link rel="stylesheet" href="css/dangky-dangnhap.css">
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js">
+    <script src="js/dangky-dangnhap.js"></script>
+    <title>Đăng nhập</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+            <div class="logo">
+                <img class="logo" src="images/logo2.jpg" width="150" height="90px">
+            </div>
+            <div class="header_nav">
+                <a href="./trangchu.html" class="header_button">Trang chủ</a>
+                <a href="./gioithieu.html" class="header_button">Giới thiệu</a>
+                <a href="./sanpham.html" class="header_button">Sản phẩm</a>
+                <a href="./tintuc.html" class="header_button">Tin tức</a>
+                <a href="./dangnhap.html" class="header_button">Đăng nhập</a>
+                <a href="./dangky.html" class="header_button">Đăng ký</a>
+                <a href="./lienhe.html" class="header_button">Liên hệ</a>
+
+                <div class="search_wrapper">
+                    <input placeholder="Nhập nội dung cần tìm" type="text">
+                    <div class="search_button">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="search_button">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="sp_1"></div>
+            <div class="sp_2"></div>
+            <div class="sp_3"></span>
+            </div>
+        </div>
+        <main>
+            <div id="dang-nhap">
+                <div id="error" class="open"></div>
+                <form id="form-dang-nhap" action="" class="was-validated">
+                    <div class="form-header">
+                        Đăng nhập
+                    </div>
+                    <div class="form-login">
+                        <div>
+                            <label class="login-label" for=""><i class="fas fa-user icon-login" ></i><b>Tên tài khoản:</b><span class="sao">*</span></label>
+                            <input type="text" class="form-control form-control-sm" id="uname" placeholder="Hãy nhập tên tài khoản" name="uname" required pattern=".{5,}">
+<div class="valid-feedback">Tên tài khoản hợp lệ.</div>
+                            <div class="invalid-feedback">Bạn chưa nhập tài khoản.</div>
+                        </div>
+        
+                        <div>
+                            <label class="login-label" for=""><i class="fas fa-lock icon-login" ></i><b>Mật khẩu:</b><span class="sao">*</span></label>
+                            <input type="password" class="form-control form-control-sm" id="pwd" placeholder="Hãy nhập mật khẩu" name="pswd" required pattern=".{8,10}">
+                            <div class="valid-feedback">Mật khẩu hợp lệ.</div>
+                            <div class="invalid-feedback">Mật khẩu 8-10 ký tự.</div>
+                           
+                        <p>Bạn <a href="#">quên mật khẩu?</a> <b>|</b> <a href="dangky.html">Tạo tài khoản</a></p>
+                        <button onclick="return showError()" id="btn" class="login-button ">ĐĂNG NHẬP<i class="fas fa-check icon-login" ></i></button>
+                        
+                    </div>
+                </form>
+        </main>
+
+
+        <footer>
+            &copy; 2021 Bản quyền thuộc về ITFive.
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-pinterest"></i>
+            <a href="#" class="to_top"></a>
+        </footer>
+    </div>
+</body>
+<script>
+    //var ureg = /.{5,}/;
+    var reg = /.{8,10}/;
+   
+    function showError(){
+        var uname = document.getElementById('uname');
+        var pwd = document.getElementById('pwd');
+        var btn = document.getElementById('btn');
+        if(uname.value.length < 5){
+            error({
+            title: "Lỗi!",
+            message: "Tên tài khoản cần ít nhất 5 ký tự",
+           
+            duration: 5000 });
+        }
+        else if(pwd.value.length == 0){
+            error({
+            title: "Lỗi!",
+            message: "Bạn chưa nhập mật khẩu",
+           
+            duration: 5000 });
+        }
+       
+        else if(!reg.test(pwd.value)){
+            error({
+            title: "Lỗi!",
+            message: "Mật khẩu tài khoản cần ít nhất 8 ký tự",
+           
+            duration: 5000 });
+        }
+       
+        else {
+            event.preventDefault();
+            
+            var account = '{"nhanvien":[{"username":"admin","password":"12345678"},{"username":"abc123","password":"12345678"}]}';
+            var obj = JSON.parse(account);
+        for (let i = 0; i < obj["nhanvien"].length; i++) {
+            if (uname.value === obj["nhanvien"][i].username
+                && pwd.value === obj["nhanvien"][i].password) {
+                if (obj["nhanvien"][i].username === "admin") {
+                    alert("Đăng nhập thành công - Bạn là quản trị viên");
+                    location.href = 'themsp.html';
+                    return;
+} else {
+                    alert("Đăng nhập thành công");
+                    location.href = 'trangchu.html';
+                    return;
+                }
+            }
+        }
+        
+        error({
+            title: "Lỗi!",
+            message: "Tên đăng nhập hoặc mật khẩu không đúng",
+           
+            duration: 5000 });
+        return;
+        }
+       
+    }
+
+</script>
+</html>

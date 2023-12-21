@@ -1,0 +1,170 @@
+[
+    {
+        "id":0,
+        "name": "Trà xanh không độ",
+        "description":"Thực phẩm bổ sung Trà xanh Không Độ được đóng chai 500ml, chai 240ml, hộp giấy 250ml, lon 330ml và phiên bản ăn kiêng cũng được đóng chai 500ml để đem đến nhiều lựa chọn cho người tiêu dùng.",
+        "price": 21000,
+        "photo": "./images/sanpham/trà xanh không độ.jpg"
+    },
+    {
+        "id":1,
+        "name": "Nước uống 7up",
+        "description":"Nước bão hòa CO2, đường mía, chất điều chỉnh độ acid, hương chanh tự nhiên,...",
+        "price": 22000,
+        "photo": "images/sanpham/7up.jpg"
+    },
+    {
+        "id":2,
+        "name": "Nước uống C2",
+        "description":"Được sản xuất từ những lá trà xanh tự nhiên hòa quyện cùng hương chanh tươi mát cho bạn một thức uống giải khát tuyệt vời. Trà xanh chứa hàm lượng chất chống oxy hóa cao cùng vitamin C dồi dào từ chanh giúp bạn luôn giữ trạng thái năng động và hứng khởi.",
+        "price": 23000,
+        "photo": "images/sanpham/c2.jpg"
+    },
+    {
+        "id":3,
+        "name": "Nước uống coca cola",
+        "description":"Từ thương hiệu nước giải khát hàng đầu thế giới, nước ngọt Coca Cola chai 390ml xua tan nhanh mọi cảm giác mệt mỏi, căng thẳng, đặc biệt thích hợp sử dụng với các hoạt động ngoài trời. Bên cạnh đó thiết kế dạng chai nhỏ gọn, tiện lợi dễ dàng bảo quản khi không sử dụng hết.",
+        "price": 24000,
+        "photo": "images/sanpham/coca.jpg"
+    },
+    {
+        "id":4,
+        "name": "Nước uống Fanta",
+        "description":"Là sản phẩm nước ngọt có gas của thương hiệu Fanta nổi tiếng giúp giải khát sau khi hoạt động ngoài trời, giải tỏa căng thẳng, mệt mỏi khi học tập, làm việc. Nước ngọt Fanta hương cam chai 390ml thơm ngon kích thích vị giác, chứa nhiều vitamin C sẽ cung cấp năng lượng cho cơ thể khỏe mạnh.",
+        "price": 25000,
+        "photo": "images/sanpham/fanta.jpg"
+    },
+    {
+        "id":5,
+        "name": "Nước uống Pepsi",
+        "description":"Từ thương hiệu nước ngọt có gas nổi tiếng toàn cầu với mùi vị thơm ngon với hỗn hợp hương tự nhiên cùng chất tạo ngọt tổng hợp, giúp xua tan cơn khát và cảm giác mệt mỏi.  Nước ngọt bổ sung năng lượng làm việc mỗi ngày. Cam kết sản phẩm chính hãng, chất lượng và an toàn.",
+        "price": 26000,
+        "photo": "images/sanpham/pepsi.jpg"
+    },
+    {
+        "id":6,
+        "name": "Nước uống Sprite",
+        "description":"Hương vị được ưa chuộng tại hơn 190 quôc gia và lọt top những nước giải khát được yêu thích nhất toàn cầu. Với vị chanh tươi mát cùng những bọt ga sảng khoái tê đầu lưỡi giúp bạn đập tan cơn khát ngay tức thì. Sản phẩm cam kết chính hãng, chất lượng và an toàn từ nhà Sprite.",
+        "price": 27000,
+        "photo": "images/sanpham/sprite.jpg"
+    },
+    {
+        "id":7,
+        "name": "Nước uống Sting",
+        "description":"Sản phẩm nước tăng lực với mùi vị thơm ngon, sảng khoái, bổ sung hồng sâm chất lượng. Sting giúp cơ thể bù đắp nước, bổ sung năng lượng, vitamin C và E, giúp xua tan cơn khát và cảm giác mệt mỏi cùng dâu cho nhẹ nhàng và dễ chịu. Cam kết chính hãng, chất lượng và an toàn.",
+        "price": 28000,
+        "photo": "images/sanpham/sting.jpg"
+    },
+    {
+        "id":8,
+        "name": "Nước suối",
+        "description":"Nước khoáng thiên nhiên La Vie 700ml từ nguồn nước khoáng thiên nhiên được sản xuất với quy trình sản xuất hiện đại. Sản phẩm nước suối đóng chai tiện lợi, dễ sử dụng, bảo quản. Mang bên mình nước khoáng Lavie đảm bảo cho cơ thể luôn trong trạng thái đủ nước đủ khoáng suốt ngày dài năng động.",
+        "price": 10000,
+        "photo": "images/sanpham/nước suối.jpg"
+    },
+    {
+        "id":9,
+        "name": "Gạo xốp mềm",
+        "description":"Gạo thơm Vua Gạo Phù Sa được canh tác trên các cánh đồng riêng biệt, màu mỡ và an toàn. Gạo thơm Vua Gạo Phù Sa túi 5kg sử dụng các loại phân bón và thuốc được dùng trong từng giai đoạn cụ thể và ghi chép theo hướng dẫn của kỹ sư nông nghiệp.",
+        "price": 28000,
+        "photo": "images/sanpham/gạo 64 xốp mềm.jpg"
+    },
+    {
+        "id":10,
+        "name": "Gạo 504",
+        "description":"Cơm xốp mềm,giúp ngon miệng, cung cấp đầy đủ chất dinh dưỡng. Gạo nở xốp - 504 , hạt gạo trắng, thơm, được canh tác theo quy trình kĩ thuật tiên tiến. Mang đến bữa cơm ngon cho gia đình bạn..",
+        "price": 28000,
+        "photo": "images/sanpham/gạo 504.jpg"
+    },
+    {
+        "id":11,
+        "name": "Gạo nàng hương",
+        "description":"Gạo nàng hương là một đặc sản của người dân vùng Chợ Đào , Mỹ Lệ , Cần Đước , Long An .Khi nấu cho cơm dẻo hạt , hương thơm tự nhiên , rất ngon và cơm vẫn dẻo ngon khi để nguội .        Gạo nàng hương chợ Đào là một trong những loại gạo vô cùng đặc biệt thơm ngon, chất lượng và điều tạo nên sự đặc trưng của loại gạo này đó chính là thời gian thu hoạch.",
+        "price": 28000,
+        "photo": "images/sanpham/gạo nàng hương.jpg"
+    },
+    {
+        "id":12,
+        "name": "Gạo nhật",
+        "description":"Hạt gạo dẻo nhiều, cơm mềm. Gạo Nhật shinichi Vua Gạo túi 5kg thích hợp làm cơm cuộn, sushi, ăn ngon miệng. Vua gạo có nguồn gốc từ gạo giống Nhật Japonica, mang đến cho bạn cảm giác lạ miệng nhưng ngon cơm. Gạo được trồng quy trình an toàn, khép kín",
+        "price": 28000,
+        "photo": "images/sanpham/gạo nhật.jpg"
+    },
+    {
+        "id":13,
+        "name": "Gạo st 24",
+        "description":"Gạo thơm đậm đà ST24 với hạt gạo dài, dẻo vừa, thơm và trắng đều. Khi nấu tỏa hương thơm lừng, cơm mềm dẻo, vị đậm đà. Được nuôi trồng theo quy trình khoa học công nghệ tiên tiến, không sử dụng chất kích thích tăng trưởng.",
+        "price": 28000,
+        "photo": "images/sanpham/gạo st 24.jpg"
+    },
+    {
+        "id":14,
+        "name": "Gạo lứt",
+        "description":"Gạo thơm, ngọt nhẹ, nhiều chất xơ, khi nấu gạo nở vừa, chứa hàm lượng dinh dưỡng cao, hỗ trợ điều hóa huyết áp, giảm cholesterol xấu,... . Gạo lức PMT túi 2kg  của PMT không sử dụng chất kích thích, chất bảo quản, đảm bảo các tiêu chuẩn về an toàn và chất lượng đến tay người dùng.",
+        "price": 28000,
+        "photo": "images/sanpham/gạo lứt.jpg"
+    },
+    {
+        "id":15,
+        "name": "Khổ qua",
+        "description":"Khổ qua dồn thịt khay 300g gồm: Khổ qua, thịt heo xay, hành lá, ớt,...Sản phẩm tươi ngon, chất lượng, đảm bảo an toàn thực phẩm, được đóng khay sơ chế sạch sẽ. Rất thích hợp cho gia đình bận rộn không có thời gian, vô cùng tiện lợi",
+        "price": 28000,
+        "photo": "images/sanpham/khổ qua.jpg"
+    },
+    {
+        "id":16,
+        "name": "Kim chi",
+        "description":"Là loại gia vị nêm sẵn mới lạ, lần đầu tiên xuất hiện cho món kim chi truyền thống trứ danh Hàn Quốc từ thương hiệu gia vị Gungon. Với gói gia vị hoàn chỉnh muối kim chi Gungon gói 60g việc thực hiện các món kim chi trở nên thật đơn giản nhưng vẫn giữ được hương vị kim chi chuẩn vị Hàn Quốc..",
+        "price": 28000,
+        "photo": "images/sanpham/kim chi.jpg"
+    },
+    {
+        "id":17,
+        "name": "Kim châm",
+        "description":"Nấm là loại thực phẩm tuy có hàm lượng vitamin và khoáng chất chỉ ngang bằng các loại rau xanh nhưng nó lại chứa nhiều loại chất dinh dưỡng cần thiết cho cơ thể trong đó có vitamin D là dưỡng chất mà khó tìm thấy trong rau hoặc một số loại thực phẩm khác. Nấm kim châm cũng là một trong số những nguồn vitamin, khoáng chất họ nấm, theo nghiên cứu chỉ với 65g nấm kim châm cung cấp chất dinh dưỡng cần thiết cho cơ thể. ",
+        "price": 28000,
+        "photo": "images/sanpham/kim châm.jpg"
+    },
+    {
+        "id":18,
+        "name": "Rau dền",
+        "description":"Rau dền bịch 500g tại Bách hoá XANH tươi ngon vô cùng, bạn có thể dễ dàng tìm được rau dền xanh mướt, rau đã tươi và ngon thì nấu món gì cũng hấp dẫn. Bạn có thể tham khảo canh rau dền tôm, cháo rau dền tôm,... thơm ngon mà cả nhà ai cũng thích",
+        "price": 28000,
+        "photo": "images/sanpham/rau dền.jpg"
+    },
+    {
+        "id":19,
+        "name": "Rau diếp nếp xanh",
+        "description":"Rau thơm như mùi lá nếp, giống như rau xà lách chỉ khác lá dài không cuộn, lá càng lên cao càng nhỏ, lá nhẵn mềm, màu xanh. Rau diếp được trồng quanh năm và cho năng xuất cao trồng mùa đông, xuân. Rau là loại rau ăn sống với món riêu cá, ốc… thịt nướng, nấu canh sẽ cho vị thơm như mướp hương hay mùi lá nếp. Đặc biết nấu bột cho trẻ nhỏ, trẻ rất thích ăn bởi nó tạo mùi thơm như lá nếp. Trong rau có nhiều khoáng chất, vitamin E,G,K, axit folic..",
+        "price": 28000,
+        "photo": "images/sanpham/rau diếp nếp xanh.jpg"
+    },
+    {
+        "id":20,
+        "name": "Rau muống",
+        "description":"Rau muống hạt baby  là rau non nên có độ giòn, ngọt hơn so với rau muống thông thường, quy trình nuôi trồng nghiêm ngặt, đảm bảo an toàn và chất lượng đến tay người tiêu dùng. Hàm lượng chất dinh dưỡng cao, đặc biệt là sắt  và chất xơ, thường được dùng để luộc, xào hoặc ăn lẩu.",
+        "price": 28000,
+        "photo": "images/sanpham/rau muống.jpg"
+    },
+    {
+        "id":21,
+        "name": "Rau ngải cứu",
+        "description":"Nếu kinh nguyệt không đều thì hằng tháng đến ngày bắt đầu kỳ kinh và cả những ngày đang có kinh, lấy ngải cứu khô 10g, thêm 200 ml nước, sắc còn 100 ml, thêm chút đường chia uống 2 lần/ngày. Có thể uống liều gấp đôi, cũng 2 lần/ngày. Sau 1-2 ngày thấy hiệu quả, người đỡ mệt, máu kinh đỏ và ít hơn.",
+        "price": 28000,
+        "photo": "images/sanpham/rau ngải cứu.jpg"
+    },
+    {
+        "id":22,
+        "name": "Rau ngổ",
+        "description":"Ngò rí là loại rau nêm có nhiều công dụng tuyệt vời trong lĩnh vực nấu nướng, làm đẹp và sức khỏe con người. Ngò rí là một trong những nguyên liệu tươi ngon và không thể thiếu trong việc làm tăng hương vị của món ăn.",
+        "price": 28000,
+        "photo": "images/sanpham/rau ngổ.jpg"
+    },
+    {
+        "id":22,
+        "name": "Rau thơm",
+        "description":"Rau thơm các loại bao gồm rau kinh giới, rau húng, rau diếp cá,... Đây là loại rau không thể thiếu giúp tạo thêm hương vị cho các món ăn như bánh xèo, bánh khọt, bánh ướt,... Rau thơm tươi ngon, xanh mơn mởn",
+        "price": 28000,
+        "photo": "images/sanpham/rau thơm.jpg"
+    }
+]

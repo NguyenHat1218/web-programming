@@ -1,0 +1,35 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    border: 1px solid;
+    text-align: center;
+}
+
+.cart_icon {
+    width: 36px;
+    height: 36px;
+    /*background: var(--primary-color);
+    color: var(--main-color);*/
+    background-color:slategrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.cart_icon:hover{
+    background-color: darkred;
+}
+.shopping{
+    background-color:darkcyan;
+    border-radius: 10px;
+    width: 80px;
+    height: 40px;
+    
+}
+.shopping:hover{
+    background-color: darkred;
+}
